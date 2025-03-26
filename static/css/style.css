@@ -1,0 +1,110 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Welcome Banner */
+#Welcome_Banner {
+    background-color: #E4C1F9; /* Purple color */
+    color: white; 
+    height: 92vh; /* Adjust the height based on your preference */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Welcome_Banner h1 {
+    color: white !important; 
+}
+
+#Welcome_Banner .col-lg-6 img {
+    border-radius: 15px; /* Adjust the radius as needed */
+    margin-top: 80px; /* Adjust the value as needed */
+}
+
+/* Card Styles */
+.card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Services Section */
+#Services {
+    color: white !important;
+    background-color: #FFD6FF;
+}
+
+/* Navbar Customization */
+.navbar-custom {
+    border-radius: 20px;
+    background-color: #C8B6FF;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.navbar-custom .navbar-toggler {
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    background-color: #FFD6FF;
+}
+
+.navbar-custom .navbar-brand {
+    border-radius: 10px;
+}
+
+/* Navbar Item Font Size */
+.nav-item {
+    font-size: 20px;
+    font-family: 'Playwrite HU', cursive, sans-serif;
+}
+
+/* Footer Styling */
+#Footer {
+    background-color: #FFD6FF;
+    color: white !important; /* Make text white */
+}
+
+/* Make all links in the footer white like in the navbar */
+#Footer .nav-link {
+    color: white !important; /* Ensures the links are white */
+}
+
+/* Make SVG icons in the footer white */
+#Footer .nav-link svg {
+    fill: white !important; /* Ensures the SVG icons are white */
+}
+
+/* Optional: Change link hover color for footer */
+#Footer .nav-link:hover {
+    background-color: #C8B6FF; /* Light purple color */
+}
+
+/* Contact Banner */
+#Contact_Banner {
+    background-image: url('static/images/lavendar.jpeg'); /* Set image here */
+    background-size: cover;  /* Ensures the image covers the entire banner */
+    background-position: center;  /* Centers the image */
+    height: 300px;  /* You can adjust the height to your needs */
+    color: white; /* Adjust text color if needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.playwrite-hu-<uniquifier> {
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: <100>;
+  font-style: normal;
+}

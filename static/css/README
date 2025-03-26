@@ -1,0 +1,85 @@
+color pallette: 
+https://coolors.co/palette/ffd6ff-e7c6ff-c8b6ff-b8c0ff-bbd0ff
+
+Portfolio Examples:
+https://sumanthsamala.com/skills
+
+-------------------------------------
+about me page---
+About Me
+Hey, I'm Brygetee! I’m a backend web developer with a strong interest in Python. While studying Computer Engineering in college, I quickly found that Python was my language of choice—its versatility and the ability to apply it across different fields captured my attention. What really drew me to web development was the opportunity to combine technical skills with creativity—building functional, user-friendly websites with HTML and CSS. I love how web development allows me to create practical solutions while also exploring creative design. My journey in coding was also shaped by working with frameworks like Flask and libraries like Tkinter and Turtle, where I enjoyed seeing my projects come to life in a visual and interactive way.
+
+What I Do
+I enjoy building apps that make a real impact, especially ones that solve problems for people with little to no technical background or help those who truly need it. I find it rewarding to create applications that simplify everyday tasks and make a tangible difference in people’s lives. On top of that, I love the creative aspect of app development, where I can design solutions that are not only functional but also visually engaging and unique.
+
+What Sets Me Apart
+One of my greatest strengths as a developer is my background in Computer Engineering, which gives me a unique understanding of both hardware and software. This perspective allows me to approach problems with a more holistic view, solving issues that others might overlook. I’m also proud to bring my diverse cultural experiences to my work, speaking Spanish and Arabic. These experiences help me think creatively, communicate effectively with different audiences, and collaborate well in teams.
+
+------------------
+<!--Services-->
+<section id="Services">
+      <div class="container px-4 py-5" id="custom-cards">
+        <h1 class="pb-2 " style="text-align: center;">Projects</h1>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Custom Web Applications</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static/images/website img.png'); height=50px; width=auto;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Websites</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static/images/python_image.jpg')">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                  </li>
+                  <li class="d-flex align-items-center">
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</section>
