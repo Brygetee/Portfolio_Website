@@ -2,56 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="path_to_your_style.css"> <!-- Add this line if not present -->
 </head>
 <body>
 {% include 'header.html' %}
-<div class="contact_banner">
 
-
-<div class="p-5 text-center bg-body-tertiary">
-    <div class="container py-5">
-      <h1 class="text-body-emphasis"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
-  <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-  <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
-</svg><br>Get in Touch!</h1>
-      <p class="col-lg-8 mx-auto lead">
-        Connect with me.
-      </p>
-    </div>
-  </div>
+<!-- Contact Banner -->
+<div id="Contact_Banner">
+    <h1>Get in Touch!</h1>
+    <p>Connect with me.</p>
 </div>
 
-include resume
-linkedin link
-<form
-        id="contactForm"
-        method="post"
-      name="sentMessage"
-      action="{{url_for('contact')}}">
-<h1>
-    Send an email</h1>
-<br>
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" placeholder="First and Last name">
-<br>
-<br>
-<label for="email">Email:</label>
-<input type="text" id ="email" name="email" placeholder="Your Email">
-<br>
-<br>
-<label for="phone">Phone:</label>
-<input type="text" id ="phone" name="phone" placeholder="Optional">
-    <br>
-<br>
-<label for="message">Message:</label>
-<input type="text" id ="message" name="message" placeholder="Your message here!">
-<button type=submit>Send</button>
-    </form>
-          {% if msg_sent: %}
-          <h1>Successfully sent your message!</h1>
-          {% else: %}
-          <h1></h1>
-            {% endif %}
+<!-- Contact Form -->
+<form id="contactForm" method="post" name="sentMessage" action="{{url_for('contact')}}">
+    <h1>Send an email</h1>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="First and Last name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" placeholder="Optional">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Your message here!" required></textarea>
+
+    <button type="submit">Send</button>
+</form>
+
+{% if msg_sent %}
+    <div class="success-message">
+        <h1>Successfully sent your message!</h1>
+    </div>
+{% else %}
+    <h1></h1>
+{% endif %}
+
+{% include "footer.html" %}
 </body>
 </html>

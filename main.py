@@ -1,9 +1,10 @@
 from operator import index
 import smtplib
 from flask import Flask, render_template, request
+import os
 
-my_email = "python.course.email28@gmail.com"
-my_password= "ouoy lmoc bibl cddh"
+my_email = os.getenv("MY_EMAIL")
+my_password= os.getenv("MY_PASSWORD")
 
 app= Flask(__name__)
 
@@ -14,10 +15,6 @@ def home():
 @app.route('/about_me')
 def about_me():
     return render_template("about_me.html")
-
-@app.route('/skills')
-def skills():
-    return render_template("skills.html")
 
 @app.route('/projects')
 def projects():
