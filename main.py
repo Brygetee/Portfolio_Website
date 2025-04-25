@@ -1,4 +1,4 @@
-from operator import index
+
 import smtplib
 from flask import Flask, render_template, request
 import os
@@ -43,4 +43,4 @@ def contact():
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

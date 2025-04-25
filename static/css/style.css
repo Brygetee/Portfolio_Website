@@ -27,7 +27,7 @@ a, button, input, textarea, select {
 /* --------------------------------------------- */
 .navbar-custom {
     border-radius: 20px;
-    background-color: #A8C7E6;
+    background-color: #A8C7E6; /* Light blue navbar */
 }
 
 .navbar-custom .navbar-nav .nav-link {
@@ -42,7 +42,7 @@ a, button, input, textarea, select {
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
-    background-color: #6A88BE;
+    background-color: #6A88BE; /* Darker blue on hover */
 }
 
 .navbar-custom .navbar-brand {
@@ -57,7 +57,7 @@ a, button, input, textarea, select {
 /* Footer Styles (Global) */
 /* --------------------------------------------- */
 #Footer {
-    background-color: #6A88BE;
+    background-color: #6A88BE; /* Dark blue footer */
     color: white !important;
     padding: 0px 0;
 }
@@ -92,6 +92,7 @@ a, button, input, textarea, select {
 #Welcome_Banner {
     background-color: #C8DAEE;
     color: #6A88BE;
+    height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,20 +308,120 @@ a, button, input, textarea, select {
 }
 
 /* --------------------------------------------- */
-/* Responsive Fixes */
+/* General Styles for Mobile and Tablets */
 /* --------------------------------------------- */
-@media (max-width: 576px) {
-  #Welcome_Banner h1 {
-    font-size: 2rem;
-  }
+@media (max-width: 768px) {
+    /* Navbar styles for small screens */
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 14px;
+    }
 
-  #Welcome_Banner h6 {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
+    /* Welcome banner adjustment */
+    #Welcome_Banner {
+        flex-direction: column;
+        height: auto;
+    }
 
-  .TechStack-button,
-  .check-work-button {
-    width: 100%;
-  }
+    #Welcome_Banner h1 {
+        font-size: 2.4rem;
+    }
+
+    #Welcome_Banner h6 {
+        max-width: 90%;
+    }
+
+    /* Project cards adjustment */
+    .card {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .card h2 {
+        font-size: 1rem;
+    }
+
+    .projects-page h1 {
+        font-size: 2rem;
+    }
+
+    /* Footer styles */
+    #Footer {
+        padding: 20px 0;
+    }
+
+    #Footer .nav-link {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    /* About Me Page */
+    .about-me {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .about-me .about-me-content h1 {
+        font-size: 1.8rem;
+    }
 }
+
+/* --------------------------------------------- */
+/* General Styles for Large Screens (Desktop) */
+/* --------------------------------------------- */
+@media (min-width: 1024px) {
+    /* Navbar styling */
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+
+    /* Welcome banner */
+    #Welcome_Banner h1 {
+        font-size: 3rem;
+    }
+
+    #Welcome_Banner h6 {
+        max-width: 600px;
+    }
+
+    /* Project cards layout */
+    .card {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    /* Footer layout */
+    #Footer .nav-link {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .projects-page h1 {
+        font-size: 3rem;
+    }
+}
+
+/* --------------------------------------------- */
+/* Very Small Screens (Phones) */
+/* --------------------------------------------- */
+@media (max-width: 480px) {
+    /* Navbar items alignment */
+    .navbar-custom .navbar-nav .nav-link {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+
+    /* Welcome banner for small screens */
+    #Welcome_Banner {
+        padding: 1rem;
+    }
+
+    #Welcome_Banner h1 {
+        font-size: 2rem;
+    }
+
+    #Welcome_Banner h6 {
+        margin: 5px 0;
+    }
+
+    .check-work-button, .TechStack-button {
+        font-size: 16
