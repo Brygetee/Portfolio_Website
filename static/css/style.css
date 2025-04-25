@@ -3,7 +3,6 @@
 /* --------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-
 /* --------------------------------------------- */
 /* General Styles */
 /* --------------------------------------------- */
@@ -23,13 +22,12 @@ a, button, input, textarea, select {
     cursor: url('/static/images/north star.cur'), auto !important;
 }
 
-
 /* --------------------------------------------- */
 /* Navbar Styles (Global) */
 /* --------------------------------------------- */
 .navbar-custom {
     border-radius: 20px;
-    background-color: #A8C7E6; /* Light blue navbar */
+    background-color: #A8C7E6;
 }
 
 .navbar-custom .navbar-nav .nav-link {
@@ -44,7 +42,7 @@ a, button, input, textarea, select {
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
-    background-color: #6A88BE; /* Darker blue on hover */
+    background-color: #6A88BE;
 }
 
 .navbar-custom .navbar-brand {
@@ -55,12 +53,11 @@ a, button, input, textarea, select {
     font-size: 20px;
 }
 
-
 /* --------------------------------------------- */
 /* Footer Styles (Global) */
 /* --------------------------------------------- */
 #Footer {
-    background-color: #6A88BE; /* Dark blue footer */
+    background-color: #6A88BE;
     color: white !important;
     padding: 0px 0;
 }
@@ -89,14 +86,12 @@ a, button, input, textarea, select {
     margin-bottom: 3px;
 }
 
-
 /* --------------------------------------------- */
 /* Welcome Banner (Homepage) */
 /* --------------------------------------------- */
 #Welcome_Banner {
     background-color: #C8DAEE;
     color: #6A88BE;
-    height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,6 +146,7 @@ a, button, input, textarea, select {
     color: white;
     transform: translateY(-3px);
 }
+
 .TechStack-button {
     background-color: #A8C7E6;
     color: white;
@@ -188,7 +184,6 @@ a, button, input, textarea, select {
     font-size: 3rem;
     margin-bottom: 40px;
 }
-
 
 /* --------------------------------------------- */
 /* Project Cards (Projects Page) */
@@ -265,7 +260,6 @@ a, button, input, textarea, select {
     text-align: center;
 }
 
-
 /* --------------------------------------------- */
 /* About Me Page Styles */
 /* --------------------------------------------- */
@@ -310,4 +304,23 @@ a, button, input, textarea, select {
 
 .fs-5.text-muted {
     color: #e0b863 !important;
+}
+
+/* --------------------------------------------- */
+/* Responsive Fixes */
+/* --------------------------------------------- */
+@media (max-width: 576px) {
+  #Welcome_Banner h1 {
+    font-size: 2rem;
+  }
+
+  #Welcome_Banner h6 {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .TechStack-button,
+  .check-work-button {
+    width: 100%;
+  }
 }
