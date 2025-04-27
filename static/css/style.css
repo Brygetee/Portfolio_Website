@@ -39,6 +39,9 @@ a, button, input, textarea, select {
 .navbar-custom .navbar-toggler {
     border-radius: 50%;
     border: 1px solid #fff;
+        max-width: 65px;
+        max-height: 50px;
+        margin-bottom: 10px
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
@@ -399,6 +402,106 @@ a, button, input, textarea, select {
         font-size: 3rem;
     }
 }
+/* --------------------------------------------- */
+/* Contact Page Styles */
+/* --------------------------------------------- */
+#Contact_Banner {
+    background-color: #C8DAEE;
+    color: #6A88BE;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 40px;
+}
+
+#Contact_Banner h1 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#Contact_Banner p {
+    font-size: 1.2rem;
+    color: #4A5A7B;
+}
+
+/* Form container */
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+form h1 {
+    color: #6A88BE;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Elements */
+label {
+    font-size: 1.1rem;
+    color: #6A88BE;
+    margin-top: 2px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #A8C7E6;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #4A5A7B;
+}
+
+input:focus, textarea:focus {
+    border-color: #6A88BE;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    background-color: #A8C7E6;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6A88BE;
+}
+
+/* Success Message */
+.success-message {
+    background-color: #D4EDDA;
+    color: #155724;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.success-message h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
 
 /* --------------------------------------------- */
 /* Very Small Screens (Phones) */

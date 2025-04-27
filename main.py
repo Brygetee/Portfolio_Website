@@ -34,7 +34,7 @@ def contact():
             connection.sendmail(
                 from_addr=my_email,
                 to_addrs=my_email,
-                msg=f"Subject: Contact me form submission from: {data["name"]}\n\n{data["message"]}\n\n{data["name"]}\n{data["email"]}\n{data["phone"]}"
+                msg=f"Subject: Contact me form submission from: {data['name']}\n\n{data['message']}\n\n{data['name']}\n{data['email']}\n{data['phone']}"
             )
         return render_template("contact.html", msg_sent = True)
 
