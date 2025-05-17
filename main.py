@@ -20,6 +20,10 @@ def about_me():
 def projects():
     return render_template("projects.html")
 
+@app.route('/download_resume')
+def download_resume():
+    return render_template("download_resume.html")
+
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":

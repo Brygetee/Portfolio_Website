@@ -63,6 +63,7 @@ a, button, input, textarea, select {
     background-color: #6A88BE; /* Dark blue footer */
     color: white !important;
     padding: 0px 0;
+
 }
 
 #Footer .nav-link {
@@ -502,7 +503,17 @@ button:hover {
     font-size: 1.5rem;
 }
 
+/* --------------------------------------------- */
+/* Download Resume Styles */
+/* --------------------------------------------- */
+.download_resume {
+    color: #6A88BE !important;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    text-align: center
+}
 
+}
 /* --------------------------------------------- */
 /* Very Small Screens (Phones) */
 /* --------------------------------------------- */
